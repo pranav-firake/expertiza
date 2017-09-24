@@ -1,65 +1,17 @@
-
-
   <!-- /wrapper -->
-<div class="main-page" width="50%">
+<div class="main-page">
   <%#= @content_page.content_html %>
-  <div class="banner">
 
 
-    <div class="wrapper">
-
-      <ul id="sb-slider" class="sb-slider">
-        <li>
-          <a href="#"><img src="../../assets/images/banner1.jpg" alt="image1"/></a>
-          <div class="sb-description">
-            <h3>Creative Lifesaver</h3>
-          </div>
-        </li>
-        <li>
-          <a href="#"><img src="../../assets/images/banner2.jpg" alt="image2"/></a>
-          <div class="sb-description">
-            <h3>Honest Entertainer</h3>
-          </div>
-        </li>
-        <li>
-          <a href="#"><img src="../../assets/images/banner3.jpg" alt="image1"/></a>
-          <div class="sb-description">
-            <h3>Brave Astronaut</h3>
-          </div>
-        </li>
-        <li>
-          <a href="#"><img src="../../assets/images/banner4.jpg" alt="image1"/></a>
-          <div class="sb-description">
-            <h3>Affectionate Decision Maker</h3>
-          </div>
-        </li>
-
-      </ul>
-
-      <div id="shadow" class="shadow"></div>
-
-      <div id="nav-arrows" class="nav-arrows">
-        <a href="#">Next</a>
-        <a href="#">Previous</a>
-      </div>
-
-      <div id="nav-dots" class="nav-dots">
-        <span class="nav-dot-current"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-
-      </div>
-    </div>
-  </div>
   <div class="login-panel">
   <!-- This logic checking if user is logged in or not, should be done in the controller -->
   <% if not session[:user] %>
     <%= render :partial => 'auth/login' %><br/>
     <% if session[:user].nil? %>
     <% else %>
+         <%= render :partial => './home' %>
       <% if session[:user].role_id == 4 || session[:user].role_id == 3 || session[:user].role_id == 2 %>
-        <%= link_to "Search log", Version %></a>
+          <%= link_to "Search log", Version %></a>
       <% end %>
     <% end %>
     <div>
