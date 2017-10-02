@@ -8,7 +8,7 @@
     <% if not session[:user] %>
         <%= render :partial => 'auth/login' %><br/>
         <% if session[:user].nil? %>
-            <% else %>
+              <% else %>
             <% if session[:user].role_id == 4 || session[:user].role_id == 3 || session[:user].role_id == 2 %>
                 <%= link_to "Search log", Version %></a>
             <% end %>
