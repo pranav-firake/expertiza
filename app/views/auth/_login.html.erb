@@ -177,7 +177,7 @@
       visibility: hidden;
     }
 
-    body {
+    .bg {
 
       background: url(/assets/lo.jpg)repeat center 0px;
       background-attachment: fixed;
@@ -203,6 +203,7 @@
       </table>
     <% end %>
   <% else %>
+        <div class="container bg">
     <%= form_tag :controller => 'auth', :action => 'logout' do %>
       <table>
         <tr>
@@ -240,6 +241,7 @@
   </p>
   <br/>
 </div>
+    </div>
     <!--<div class="wikidata">-->
       <!--<img class="img img-responsive" src="/assets/lo.jpg">-->
     <!--</div>-->
