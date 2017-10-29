@@ -1,0 +1,153 @@
+//admin
+
+<h1>User: <%=h @user.name %></h1>
+
+<table>
+
+  <tr><th>Full Name:</th>
+    <td><%= @user.fullname %></td>
+  </tr>
+
+  <tr><th>Email Address:</th>
+    <td><%= @user.email %></td>
+  </tr>
+
+  <tr><th>Role:</th>
+    <td><%= @role.name %></td>
+  </tr>
+
+</table>
+
+
+//advertise_for_partner
+
+<p><label for="comments_for_advertisement" >Please describe the qualifications you are looking for in a teammate.</label><br/>
+  <%#= text_area(:comment,"") %>
+  <% ad_content = Team.find(params[:team_id]).comments_for_advertisement %>
+
+  <%= text_field_tag 'comments_for_advertisement',ad_content%>
+
+</p>
+
+
+<%#= render :partial => 'user', :locals => { :new_user => true } %>
+<%#= submit_tag "Advertise" %>
+
+
+//content_pages
+
+<%= error_messages_for 'content_page' %>
+
+<!--[form:content_page]-->
+
+<p><label for="content_page_name">Name</label><br/>
+  <%= text_field 'content_page', 'name' %> Unique name, used as URL (can
+  contain slashes)</p>
+
+
+<p><label for="content_page_title">Title</label><br/>
+  <%= text_field 'content_page', 'title' %> Visible page title </p>
+
+<p><label for="content_page_permission_id">Permission
+    Required</label><br/>
+  <%= collection_select :content_page, :permission_id,
+    @permissions, :id, :name %></p>
+
+  <p><label for="content_page_markup_style_id">Markup Style </label><br/>
+    <%= collection_select :content_page, :markup_style_id,
+      @markup_styles, :id, :name %></p>
+
+    <p><label for="content_page_content">Content</label><br/>
+      <%= text_area 'content_page', 'content', :cols => 70, :rows => 25 %></p>
+
+    <!--[eoform:content_page]-->
+
+
+//controller_actions
+
+<%= error_messages_for 'controller_action' %>
+
+<!--[form:controller_action]-->
+<table>
+  <tr>
+    <th>Controller</th>
+    <td>
+      <% if @site_controller -%>
+        <%= hidden_field :controller_action, :site_controller_id %>
+        <%= link_to @site_controller.name, :controller => 'site_controllers',
+          :action => 'show', :id => @site_controller.id %>
+      <% else -%>
+        <%= collection_select :controller_action, :site_controller_id,
+          @controllers, :id, :name %>
+      <% end -%>
+    </td>
+  </tr>
+
+  <tr>
+    <th>Action</th>
+    <td>
+      <% if @actions %>
+        <%= collection_select :controller_action, :name,
+          @actions, :name, :name %>
+        or type here:
+        <%= text_field :controller_action, :specific_name %>
+      <% else -%>
+        <%= text_field :controller_action, :name  %></p>
+    <% end -%>
+  </td>
+</tr>
+
+<tr>
+  <th>URL to use</th>
+  <td><%= text_field :controller_action, :url_to_use %>
+  (Leave blank if not applicable)</td>
+</tr>
+
+<tr>
+  <td></td><td></td>
+</tr>
+
+<tr>
+  <th>Permission</th>
+  <td>
+    <%= collection_select 'controller_action', 'permission_id',
+      @permissions, :id, :name %>
+  </td>
+</tr>
+</table>
+
+<!--[eoform:controller_action]-->
+
+//course
+
+<!--[form:course]-->
+<p><label for="institution_name">Institution Name</label><br/>
+<%= select("course", "institutions_id", Institution.all.collect{ |c| [ c.name, c.id] }) %></p>
+
+<p><label for="course_name">Course Name</label><br/>
+<%= text_field 'course', 'name'  %></p>
+
+<p><label for="course_directory_path">Course Directory</label> (Mandatory field. No space or special chars.)
+  <img src="/assets/info.png" title='- DO NOT change this filed for an on-going course. This may cause lost of student submitted file.'>
+<br/>
+<%= text_field 'course', 'directory_path'  %></p>
+<p><label for="course_info">Course Information</label><br/>
+<%= text_field 'course', 'info'  %></p>
+
+<!--[eoform:user]-->
+<br/>
+
+//course _ta
+
+<tr class="listingRow">
+  <td><%= User.find(ta.ta_id).name %></td>
+  <td><%= link_to "Edit", {:action => 'show', :controller =>'users', :id => ta.ta_id} %></td>
+  <td>
+    <%= link_to "Delete", { :action => 'remove_ta', :controller =>'course', :id => ta.id, :course_id => ta.course_id }, method: :post, :remote => true, :class => 'remove_ta' %>
+  </td>
+</tr>
+
+
+
+
+

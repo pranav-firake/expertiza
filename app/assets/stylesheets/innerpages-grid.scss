@@ -1,0 +1,123 @@
+//export_file
+
+//assignment_team
+<br/>
+<label for="Export Fields">Export : <br/></label><br/>
+<%= check_box 'options', 'team_name', {:checked => 'unchecked'}, "true", "false" %>
+<label for="Export Fields">Team Name Only</label><br/>
+<br/>
+
+//course_participants
+<br/>
+<label for="Export Fields">Export : <br/></label><br/>
+<%= check_box 'options', 'personal_details', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Personal Details </label><br/>
+<%= check_box 'options', 'role', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Role </label><br/>
+<%= check_box 'options', 'parent', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Parent</label><br/>
+<%= check_box 'options', 'email_options', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Email Options</label><br/>
+<%= check_box 'options', 'handle', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Handle</label><br/>
+<br/>
+
+//course_team
+<br/>
+<label for="Export Fields">Export : <br/></label><br/>
+<%= check_box 'options', 'team_name', {:checked => 'unchecked'}, "true", "false" %>
+<label for="Export Fields">Team Name Only</label><br/>
+<br/>
+
+//export_details
+<br/>
+<label for="Export Details Fields">Export : <br/></label><br/>
+<%= check_box 'details', 'team_id', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Details Fields">Team ID / Author ID</label><br/>
+<%= check_box 'details', 'team_name', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Details Fields">Team Name / Paper Author</label><br/>
+<%= check_box 'details', 'reviewer', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Details Fields">Reviewer</label><br/>
+<%= check_box 'details', 'question', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Details Fields">Question ID / Dimension</label><br/>
+<%= check_box 'details', 'question_id', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Details Fields">Question / Dimension Name</label><br/>
+<%= check_box 'details', 'comment_id', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Details Fields">Comment ID / Dimension ID</label><br/>
+<%= check_box 'details', 'comments', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Details Fields">Comment Content</label><br/>
+<%= check_box 'details', 'score', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Details Fields">Score</label><br/>
+<br/>
+
+//scores
+<br/>
+<label for="Export Fields">Export : <br/></label><br/>
+<%= check_box 'options', 'team_score', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Team Score</label><br/>
+<%= check_box 'options', 'submitted_score', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Submitted Score</label><br/>
+<%= check_box 'options', 'author_feedback_score', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Metareview Score</label><br/>
+<%= check_box 'options', 'metareview_score', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Author Feedback Score</label><br/>
+<%= check_box 'options', 'teammate_review_score', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Teammate Review Score</label><br/>
+<br/>
+
+//users
+<br/>
+<label for="Export Fields">Export : <br/></label><br/>
+<%= check_box 'options', 'personal_details', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Personal Details</label><br/>
+<%= check_box 'options', 'role', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Role</label><br/>
+<%= check_box 'options', 'parent', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Parent</label><br/>
+<%= check_box 'options', 'email_options', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Email Options</label><br/>
+<%= check_box 'options', 'handle', {:checked => 'checked'}, "true", "false" %>
+<label for="Export Fields">Handle</label><br/>
+<br/>
+
+//institution
+
+<%= error_messages_for 'institution' %>
+
+<!--[form:institution]-->
+<p><label for="institution_name">Name</label><br/>
+  <%= text_field 'institution', 'name'  %></p>
+<!--[eoform:institution]-->
+
+//late_policies
+
+<%= error_messages_for 'late_policies' %>
+
+<!--[form:late_policies]-->
+<p>
+<label for="late_policy_name">Late policy Name:</label><label style="color: #ff0000;">*</label><br/>
+  <%= f.text_field 'policy_name', :value => @penalty_policy.policy_name %>
+</p>
+<p>
+<label for="late_policy_penalty_points_per_unit">Penalty Points Per Unit:</label><label style="color: #ff0000;">*</label><br/>
+  <%= f.text_field 'penalty_per_unit', :value => @penalty_policy.penalty_per_unit %>
+
+</p>
+<p>
+<label for="penalty_unit">Penalty Unit:</label><label style="color: #ff0000;">*</label><br/>
+  <!--select name='late_policy[:penalty_unit]'>
+<option value='Minute' < if @penalty_policy[:penalty_unit] == 'Minute'%>selected< end %>>Minute</option>
+<option value='Hour' < if @penalty_policy[:penalty_unit] == 'Hour'%>selected< end %>>Hour</option>
+<option value='Day' < if @penalty_policy[:penalty_unit] == 'Day'%>selected< end %>>Day</option>
+</select-->
+<% @units=["Minute","Hour","Day"]%>
+<%= f.select("penalty_unit",@units,:selected=>@penalty_policy[:penalty_unit]) %>
+</p>
+<p>
+  <label for="late_policy_penalty_maximum">Maximum Penalty:</label><label style="color: #ff0000;">*</label><br/>
+  <%= f.text_field 'max_penalty', :value =>  @penalty_policy.max_penalty %>
+
+</p>
+<!--[eoform:late_policies]-->
+
+
