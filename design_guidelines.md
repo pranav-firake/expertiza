@@ -2,7 +2,7 @@
 
 
 
-## Homepage (Pranav & Rui)
+## Homepage (Danish)
 
 
 ## Header 
