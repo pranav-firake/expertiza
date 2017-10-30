@@ -1,16 +1,35 @@
-### Design guidelines for expertiza UI
+# Design guidelines for expertiza UI
 
 
 
 ## Homepage (Danish)
 
+For the Homepage we have only used one CSS class apart from native bootstrap and that is for crousel. However, this css class is not necessary for other pages unless you want to include a crousel on your page. 
+
+To make a page similar to Homepage following steps can be followed.
+
+* #### To add Crousel
+
+
+   - Add an outer div `<div class="carousel slide" data-ride="carousel">`.
+   + Inside this div you can define optional page indicators with `<ol>` Tag
+   - After this to include the data or items in crousel use `<div class="carousel-inner" role="listbox">`.
+   - Inside this div define individual items like `<div class="item">` 
+   - To make an item active use `<div class="item active">`
+   
+
+
+
+
+
+
 
 ## Header 
-### logo
+## logo
 
-### Dropdown
+## Dropdown
 
-### User Profile (sign in/out)
+## User Profile (sign in/out)
 
 ## Footer
 
