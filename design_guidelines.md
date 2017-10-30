@@ -37,7 +37,7 @@ To make a page similar to Homepage following steps can be followed.
 
 ## Tables (Rui)
 
-For the tables, we recommend using bootstrap table class to make tables looks unified. We already include bootstrap reference, feel free to reference that table styles. For react.js tables, we can still use !(react-bootstrap-table)[http://allenfang.github.io/react-bootstrap-table/] to make tables unified.
+For the tables, we recommend using bootstrap table class to make tables looks unified. We already include bootstrap reference, feel free to reference that table styles. For react.js tables, we can still use [react-bootstrap-table](http://allenfang.github.io/react-bootstrap-table/) to make tables unified.
 
 
 ## Forms (Pranav)
