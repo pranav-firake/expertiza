@@ -68,10 +68,10 @@ Sections
 **Guide**
 **Code**	
 |---|---|---|---|---|
-|  1 |  Heading | ![Heading](Design_Images/image33.png)  | To add 'heading to page' icon,  Use H1 tag | ```  <h1> List of Deployments </h1> ``` |
+|  1 |  Heading | ![Heading](Design_Images/image33.PNG)  | To add 'heading to page' icon,  Use H1 tag | ```  <h1> List of Deployments </h1> ``` |
 |  2 |  Table / Grid | ![table](Design_Images/image7.png)  | If adding table Please add ```class=”table”``` code | ```  <table class="table"<tbody> ... </tbody></table> ``` |
 |  3 |  Notification | ![notification](Design_Images/image2.png)  | For notification, add class as ```class="flash_note alert alert-success"``` | ```  <div class="flash_note alert alert-success">Select an assignment from the list or set <strong><a href="/publishing/view">publishing rights</a></strong> for your work. </div> ``` |
-|  4 |  taskbox | ![taskbox](Design_Images/image12.png)  | Taskbox summarizes user's current events or pending items  | ![taskbox](Design_Images/image34.png) |
+|  4 |  taskbox | ![taskbox](Design_Images/image12.png)  | Taskbox summarizes user's current events or pending items  | ![taskbox](Design_Images/image34.PNG) |
 
 
 
