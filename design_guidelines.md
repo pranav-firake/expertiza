@@ -102,9 +102,10 @@ Sections
 
 Icon Palette : 
 
-|![Add Assignment](Design_Images/image4.png) |![Add TA](Design_Images/image16.png)|![Add Private](Design_Images/image18.png)|![Add Public](Design_Images/image19.png)|![Add Signup sheet](Design_Images/image20.png)|![Assign Course Blue](Design_Images/image21.png)|![Assign Course Green](Design_Images/image22.png)|![Assign survey to](Design_Images/image11.png)|
-|![Copy](Design_Images/image1.png)|![Create Team](Design_Images/image6.png)|![Delete](Design_Images/image15.png)|![Edit](Design_Images/image14.png) |![Edit Signup sheet](Design_Images/image23.png)|![List All](Design_Images/image8.png)| ![List Submissions](Design_Images/image24.png)| ![Make public from private](Design_Images/image10.png)|
-|![Private](Design_Images/image25.png)| ![Remove from Course](Design_Images/image26.png) |![Run Lottery](Design_Images/image27.png)  |![Search in data](Design_Images/image28.png)|![View Review Report](Design_Images/image29.png)|![View Scores](Design_Images/image30.png) |![View Suggestions](Design_Images/image31.png) | ![View Survey](Design_Images/image31.png)|
+
+|![Add Assignment](Design_Images/image4.png) |![Add TA](Design_Images/image16.png)|![Add Private](Design_Images/image18.png)|![Add Public](Design_Images/image19.png)|![Add Signup sheet](Design_Images/image20.png)|![Assign Course Blue](Design_Images/image21.png)|![Assign Course Green](Design_Images/image22.png)|![Assign survey to](Design_Images/image11.png)|![Copy](Design_Images/image1.png)|![Create Team](Design_Images/image6.png)|![Delete](Design_Images/image15.png)|![Edit](Design_Images/image14.png) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+|![Edit Signup sheet](Design_Images/image23.png)|![List All](Design_Images/image8.png)| ![List Submissions](Design_Images/image24.png)| ![Make public from private](Design_Images/image10.png)|![Private](Design_Images/image25.png)| ![Remove from Course](Design_Images/image26.png) |![Run Lottery](Design_Images/image27.png)  |![Search in data](Design_Images/image28.png)|![View Review Report](Design_Images/image29.png)|![View Scores](Design_Images/image30.png) |![View Suggestions](Design_Images/image31.png) | ![View Survey](Design_Images/image31.png)|
 
 ---
 
