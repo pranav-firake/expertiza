@@ -41,15 +41,24 @@ To make a page similar to Homepage following steps can be followed.
 
 For the tables, we recommend using bootstrap table class to make tables looks unified. We already include bootstrap reference, feel free to reference that table styles. For react.js tables, we can still use [react-bootstrap-table](http://allenfang.github.io/react-bootstrap-table/) to make tables unified.
 
+---
 
 ## (Pranav)
 
 Sections 
 
-1. [Common Elements on html page](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#common-elements-)
-1. [Icon Library](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#icon-library)
+1. [Inner page layout](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#inner-page-layout)
+   Use these layout guielines while starting to design inner-page
+   
+2. [Common Elements on html page](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#common-elements-)
+   Guidelines for common html elements
+   
+3. [Icon Library](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#icon-library)
+   Use this Icon library for any icons in expertiza
    
    
+---
+
 ## Inner Page Layout  
    
 ---
@@ -83,7 +92,9 @@ Sections
 |  3 |  Circled numbers | ![Circled Number](Design_Images/image3.png)  |  Numbers that are to be styled in red circle, Kindly add class as badge | ``` <span class="badge">0</span> ```  |
 |  4 |  Text Input | ![Text Input](Design_Images/image9.png)  | Any text input to be added on page. No need to add any class  |  ``` <input placeholder="Search..." value="" type="text"> ``` |
 
+
 ---
+
 ## Icon Library 
 
 > Icons are available in 4 sizes : 16, 24, 32, 48. It is possibility that we might not have all sizes for all icons.
