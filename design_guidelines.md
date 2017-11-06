@@ -35,9 +35,28 @@ To make a page similar to Homepage following steps can be followed.
 
 
 
-## Tables (Rui)
+## (Rui)
+
+## Tables 
 
 For the tables, we recommend using bootstrap table class to make tables looks unified. We already include bootstrap reference, feel free to reference that table styles. For react.js tables, we can still use [react-bootstrap-table](http://allenfang.github.io/react-bootstrap-table/) to make tables unified.
 
 
-## Forms (Pranav)
+## (Pranav)
+
+---
+
+> Common Elements : 
+
+**1.Element Name**
+**2.Image**
+**3.Usage**
+**4.Guide**
+**5.Code**	
+|---|---|---|---|---|
+|  1 |  Button - Red style | ![button](images/image5.png)  | Any button to be added. No need to add any class  | ```<button type="submit" class="btn btn-primary pull-right new-button">New public course</button> ``` |
+|  2 |  Link -  | ![Link](images/image13.png)  |  Any link to be added on page. No need to add any class | ``` <a href="/student_task/view?id=2970"> MAE277 Group Project Report</a> ```  |
+|  3 |  Circled numbers | ![Circled Number](images/image3.png)  |  Numbers that are to be styled in red circle, Kindly add class as badge | ``` <span class="badge">0</span> ```  |
+|  4 |  Text Input | ![Text Input](images/image9.png)  | Any text input to be added on page. No need to add any class  |  ``` <input placeholder="Search..." value="" type="text"> ``` |
+
+
