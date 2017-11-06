@@ -41,21 +41,49 @@ To make a page similar to Homepage following steps can be followed.
 
 For the tables, we recommend using bootstrap table class to make tables looks unified. We already include bootstrap reference, feel free to reference that table styles. For react.js tables, we can still use [react-bootstrap-table](http://allenfang.github.io/react-bootstrap-table/) to make tables unified.
 
+---
 
 ## (Pranav)
 
 Sections 
 
-1. [Common Elements on html page](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#common-elements-)
-1. [Icon Library](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#icon-library)
+1. [Inner page layout](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#inner-page-layout)
+   Use these layout guielines while starting to design inner-page
    
+2. [Common Elements on html page](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#common-elements-)
+   Guidelines for common html elements
+   
+3. [Icon Library](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#icon-library)
+   Use this Icon library for any icons in expertiza
+   
+   
+---
+
+## Inner Page Layout  
+   
+---
+**Sr. No.**
+**Element Name**
+**Image**
+**Guide**
+**Code**	
+|---|---|---|---|---|
+|  1 |  Heading | ![Heading](Design_Images/image33.png)  | To add 'heading to page' icon,  Use H1 tag | ```  <h1> List of Deployments </h1> ``` |
+|  2 |  Table / Grid | ![table](Design_Images/image7.png)  | If adding table Please add ```class=”table”``` code | ```  <table class="table"<tbody> ... </tbody></table> ``` |
+|  3 |  Notification | ![notification](Design_Images/image2.png)  | For notification, add class as ```class="flash_note alert alert-success"``` | ```  <div class="flash_note alert alert-success">Select an assignment from the list or set <strong><a href="/publishing/view">publishing rights</a></strong> for your work. </div> ``` |
+|  4 |  taskbox | ![taskbox](Design_Images/image12.png)  | Taskbox summarizes user's current events or pending items  | ![taskbox](Design_Images/image34.png) |
+
+
+
+
+
 ---
 
 ## Common Elements : 
 
+**Sr. No.**
 **Element Name**
 **Image**
-**Usage**
 **Guide**
 **Code**	
 |---|---|---|---|---|
@@ -64,7 +92,9 @@ Sections
 |  3 |  Circled numbers | ![Circled Number](Design_Images/image3.png)  |  Numbers that are to be styled in red circle, Kindly add class as badge | ``` <span class="badge">0</span> ```  |
 |  4 |  Text Input | ![Text Input](Design_Images/image9.png)  | Any text input to be added on page. No need to add any class  |  ``` <input placeholder="Search..." value="" type="text"> ``` |
 
+
 ---
+
 ## Icon Library 
 
 > Icons are available in 4 sizes : 16, 24, 32, 48. It is possibility that we might not have all sizes for all icons.
@@ -73,18 +103,16 @@ Sections
 Icon Palette : 
 
 |![Add Assignment](Design_Images/image4.png) |![Add TA](Design_Images/image16.png)|![Add Private](Design_Images/image18.png)|![Add Public](Design_Images/image19.png)|![Add Signup sheet](Design_Images/image20.png)|![Assign Course Blue](Design_Images/image21.png)|![Assign Course Green](Design_Images/image22.png)|![Assign survey to](Design_Images/image11.png)|
-
 |![Copy](Design_Images/image1.png)|![Create Team](Design_Images/image6.png)|![Delete](Design_Images/image15.png)|![Edit](Design_Images/image14.png) |![Edit Signup sheet](Design_Images/image23.png)|![List All](Design_Images/image8.png)| ![List Submissions](Design_Images/image24.png)| ![Make public from private](Design_Images/image10.png)|
-
 |![Private](Design_Images/image25.png)| ![Remove from Course](Design_Images/image26.png) |![Run Lottery](Design_Images/image27.png)  |![Search in data](Design_Images/image28.png)|![View Review Report](Design_Images/image29.png)|![View Scores](Design_Images/image30.png) |![View Suggestions](Design_Images/image31.png) | ![View Survey](Design_Images/image31.png)|
 
 ---
 
+**Sr. No.**
 **Element Name**
 **Image**
-**Usage**
 **Guide**
-**Code**	
+**Code**		
 |---|---|---|---|---|
 |  1 |  Add assignment | ![Add Assignment](Design_Images/image4.png)  | To add 'add assignment' icon, use path **```/assets/tree_view/add-assignment-24.png```** | ```<img alt="" src="/assets/tree_view/add-assignment-24.png" > ``` |
 |  2 |  Add Teaching assistant | ![Add TA](Design_Images/image16.png)  | To add 'add TA' icon, use path **```/assets/tree_view/add-ta-24.png```** | ```<img alt="" src="/assets/tree_view/add-ta-24.png" > ``` |
@@ -113,5 +141,6 @@ Icon Palette :
 
 
 
-## Special Elements in Inner Pages
+
+
 
