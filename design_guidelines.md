@@ -49,13 +49,32 @@ Sections
 1. [Common Elements on html page](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#common-elements-)
 1. [Icon Library](https://github.com/pranav-firake/expertiza/blob/master/design_guidelines.md#icon-library)
    
+   
+## Inner Page Layout  
+   
+---
+**Sr. No.**
+**Element Name**
+**Image**
+**Guide**
+**Code**	
+|---|---|---|---|---|
+|  1 |  Heading | ![Heading](Design_Images/image33.png)  | To add 'heading to page' icon,  Use H1 tag | ```  <h1> List of Deployments </h1> ``` |
+|  2 |  Table / Grid | ![table](Design_Images/image7.png)  | If adding table Please add ```class=”table”``` code | ```  <table class="table"<tbody> ... </tbody></table> ``` |
+|  3 |  Notification | ![notification](Design_Images/image2.png)  | For notification, add class as ```class="flash_note alert alert-success"``` | ```  <div class="flash_note alert alert-success">Select an assignment from the list or set <strong><a href="/publishing/view">publishing rights</a></strong> for your work. </div> ``` |
+|  4 |  taskbox | ![taskbox](Design_Images/image12.png)  | Taskbox summarizes user's current events or pending items  | ![taskbox](Design_Images/image34.png) |
+
+
+
+
+
 ---
 
 ## Common Elements : 
 
+**Sr. No.**
 **Element Name**
 **Image**
-**Usage**
 **Guide**
 **Code**	
 |---|---|---|---|---|
@@ -78,11 +97,11 @@ Icon Palette :
 
 ---
 
+**Sr. No.**
 **Element Name**
 **Image**
-**Usage**
 **Guide**
-**Code**	
+**Code**		
 |---|---|---|---|---|
 |  1 |  Add assignment | ![Add Assignment](Design_Images/image4.png)  | To add 'add assignment' icon, use path **```/assets/tree_view/add-assignment-24.png```** | ```<img alt="" src="/assets/tree_view/add-assignment-24.png" > ``` |
 |  2 |  Add Teaching assistant | ![Add TA](Design_Images/image16.png)  | To add 'add TA' icon, use path **```/assets/tree_view/add-ta-24.png```** | ```<img alt="" src="/assets/tree_view/add-ta-24.png" > ``` |
@@ -111,5 +130,6 @@ Icon Palette :
 
 
 
-## Special Elements in Inner Pages
+
+
 
