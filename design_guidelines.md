@@ -54,9 +54,9 @@ For the tables, we recommend using bootstrap table class to make tables looks un
 **4.Guide**
 **5.Code**	
 |---|---|---|---|---|
-|  1 |  Button - Red style | ![button](images/image5.png)  | Any button to be added. No need to add any class  | ```<button type="submit" class="btn btn-primary pull-right new-button">New public course</button> ``` |
-|  2 |  Link -  | ![Link](images/image13.png)  |  Any link to be added on page. No need to add any class | ``` <a href="/student_task/view?id=2970"> MAE277 Group Project Report</a> ```  |
-|  3 |  Circled numbers | ![Circled Number](images/image3.png)  |  Numbers that are to be styled in red circle, Kindly add class as badge | ``` <span class="badge">0</span> ```  |
-|  4 |  Text Input | ![Text Input](images/image9.png)  | Any text input to be added on page. No need to add any class  |  ``` <input placeholder="Search..." value="" type="text"> ``` |
+|  1 |  Button - Red style | ![button](Design_Images/image5.png)  | Any button to be added. No need to add any class  | ```<button type="submit" class="btn btn-primary pull-right new-button">New public course</button> ``` |
+|  2 |  Link -  | ![Link](Design_Images/image13.png)  |  Any link to be added on page. No need to add any class | ``` <a href="/student_task/view?id=2970"> MAE277 Group Project Report</a> ```  |
+|  3 |  Circled numbers | ![Circled Number](Design_Images/image3.png)  |  Numbers that are to be styled in red circle, Kindly add class as badge | ``` <span class="badge">0</span> ```  |
+|  4 |  Text Input | ![Text Input](Design_Images/image9.png)  | Any text input to be added on page. No need to add any class  |  ``` <input placeholder="Search..." value="" type="text"> ``` |
 
 
