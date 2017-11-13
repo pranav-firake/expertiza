@@ -199,7 +199,9 @@ a.article, a.article:hover {
     transition: all 0.3s;
 }
 
-
+.special img{
+	max-width : 150px;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
